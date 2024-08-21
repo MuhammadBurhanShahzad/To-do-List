@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #6f4c3e, #d6cda4, #ffcc00, #4b3d3d, #1e90ff); /* Brown, Yellow, Golden, Dark Brown, and Blue gradient */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #4b3d3d; /* Dark brown */
+            color: #ffcc00; /* Golden color */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin: 15px 0;
+        }
+
+        nav a {
+            color: #ffcc00; /* Golden color */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff; /* White on hover */
+        }
+
+        main {
+            flex: 1; /* Allow main to grow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box {
+            background-color: #fff; /* White background for boxes */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Box width */
+            height: 200px; /* Box height */
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none; /* Remove underline */
+            color: #4b3d3d; /* Dark brown text */
+            transition: transform 0.2s; /* Animation for hover effect */
+        }
+
+        .box:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+
+        .box i {
+            font-size: 50px; /* Icon size */
+            margin-bottom: 10px; /* Space between icon and text */
+        }
+
+        footer {
+            background-color: #4b3d3d; /* Dark brown */
+            color: #ffcc00; /* Golden color */
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Burhan's To-Do List</h1>
+    </header>
+    <main>
+        <div class="container">
+            <a href="daily.html" class="box">
+                <i class="fas fa-calendar-day"></i>
+                <h2>Daily Tasks</h2>
+            </a>
+            <a href="monthly.html" class="box">
+                <i class="fas fa-calendar-alt"></i>
+                <h2>Monthly Tasks</h2>
+            </a>
+            <a href="yearly.html" class="box">
+                <i class="fas fa-calendar-week"></i>
+                <h2>Yearly Tasks</h2>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Premium To-Do List. All rights reserved.</p>
+    </footer>
+</body>
+</html>
